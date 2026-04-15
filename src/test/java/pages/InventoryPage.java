@@ -43,6 +43,7 @@ public class InventoryPage {
         driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
     }
 
+    
     public void openCart() {
         driver.findElement(By.className("shopping_cart_link")).click();
     }
