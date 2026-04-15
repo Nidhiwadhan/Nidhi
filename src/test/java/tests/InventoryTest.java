@@ -38,7 +38,6 @@ public class InventoryTest extends BaseTest {
         // Step 5: Assertion
         Assert.assertEquals(actualPrices, expectedPrices,
                 "Products are not sorted correctly (Low → High)");
-        checkout.mainMenu();
         checkout.logout();
     }
 }

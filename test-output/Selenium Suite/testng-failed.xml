@@ -4,13 +4,24 @@
   <listeners>
     <listener class-name="listeners.TestListener"/>
   </listeners>
+  <test thread-count="2" parallel="tests" name="Inventory Tests(failed)">
+    <classes>
+      <class name="tests.InventoryTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="sortPriceLowToHighTest"/>
+        </methods>
+      </class> <!-- tests.InventoryTest -->
+    </classes>
+  </test> <!-- Inventory Tests(failed) -->
   <test thread-count="2" parallel="tests" name="Shopping Tests(failed)">
     <classes>
       <class name="tests.ShoppingTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="purchaseFlow"/>
+          <include name="RemoveFromCart"/>
         </methods>
       </class> <!-- tests.ShoppingTest -->
     </classes>

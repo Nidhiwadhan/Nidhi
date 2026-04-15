@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Shopping Tests</title>
+<title>TestNG:  Inventory Tests</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Shopping Tests</h2><table border='1' align="center">
+<h2 align='center'>Inventory Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 15 13:46:02 BST 2026</td>
+<td>Started on:</td><td>Wed Apr 15 13:46:07 BST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11563 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3262 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.ShoppingTest.RemoveFromCart()'><b>RemoveFromCart</b><br>Test class: tests.ShoppingTest</td>
+<td title='tests.InventoryTest.sortPriceLowToHighTest()'><b>sortPriceLowToHighTest</b><br>Test class: tests.InventoryTest</td>
 <td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=137.0.7151.104)
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5943c2b5b741f671851f2b7146a1b21d, clickElement {id=f.FEF559AFE224C81D569276F442D5CE04.d.A824AF5C63B701568B3ECCD57A42EBC5.e.265}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\mepan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60236/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5943c2b5b741f671851f2b7146a1b21d)] -&gt; id: logout_sidebar_link]
-Session ID: 5943c2b5b741f671851f2b7146a1b21d
+Command: [0d4a54c7419577a0ff551589d49f91aa, clickElement {id=f.CC0D21AA97C52D65E21330B928568480.d.0968509967C4C3F4A104FAC6E6E4A966.e.73}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\mepan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60220}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60220/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0d4a54c7419577a0ff551589d49f91aa)] -&gt; id: logout_sidebar_link]
+Session ID: 0d4a54c7419577a0ff551589d49f91aa
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -96,22 +96,22 @@ Session ID: 5943c2b5b741f671851f2b7146a1b21d
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 	at pages.CheckoutPage.logout(CheckoutPage.java:35)
-	at tests.ShoppingTest.RemoveFromCart(ShoppingTest.java:50)
+	at tests.InventoryTest.sortPriceLowToHighTest(InventoryTest.java:42)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
 	at java.base/java.lang.Thread.run(Thread.java:1516)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace552579714", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace552579714'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace426757807", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace426757807'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=137.0.7151.104)
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5943c2b5b741f671851f2b7146a1b21d, clickElement {id=f.FEF559AFE224C81D569276F442D5CE04.d.A824AF5C63B701568B3ECCD57A42EBC5.e.265}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\mepan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60236/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5943c2b5b741f671851f2b7146a1b21d)] -&gt; id: logout_sidebar_link]
-Session ID: 5943c2b5b741f671851f2b7146a1b21d
+Command: [0d4a54c7419577a0ff551589d49f91aa, clickElement {id=f.CC0D21AA97C52D65E21330B928568480.d.0968509967C4C3F4A104FAC6E6E4A966.e.73}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\mepan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60220}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60220/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0d4a54c7419577a0ff551589d49f91aa)] -&gt; id: logout_sidebar_link]
+Session ID: 0d4a54c7419577a0ff551589d49f91aa
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -125,7 +125,7 @@ Session ID: 5943c2b5b741f671851f2b7146a1b21d
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 	at pages.CheckoutPage.logout(CheckoutPage.java:35)
-	at tests.ShoppingTest.RemoveFromCart(ShoppingTest.java:50)
+	at tests.InventoryTest.sortPriceLowToHighTest(InventoryTest.java:42)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -148,21 +148,7 @@ Session ID: 5943c2b5b741f671851f2b7146a1b21d
 	at java.base/java.lang.Thread.run(Thread.java:1516)
 </pre></div></td>
 <td>1</td>
-<td>tests.ShoppingTest@1d2adfbe</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.ShoppingTest.purchaseFlow()'><b>purchaseFlow</b><br>Test class: tests.ShoppingTest</td>
-<td></td>
-<td>1</td>
-<td>tests.ShoppingTest@1d2adfbe</td></tr>
+<td>tests.InventoryTest@436813f3</td></tr>
 </table><p>
 </body>
 </html>

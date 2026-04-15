@@ -46,9 +46,7 @@ public void RemoveFromCart() {
     inventory.addItem();
     inventory.openCart();
     checkout.removeButton();
-    checkout.mainMenu();
-    checkout.logout();
-   
+    checkout.logout();   
     
 }
 }
