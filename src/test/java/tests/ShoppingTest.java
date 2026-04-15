@@ -1,6 +1,10 @@
 package tests;
 
 import base.BaseTest;
+import java.time.Duration;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.*;
@@ -16,7 +20,7 @@ public class ShoppingTest extends BaseTest {
         CheckoutPage checkout = new CheckoutPage(DriverFactory.getDriver());
 
         login.login("standard_user", "secret_sauce");
-
+       
         inventory.addItem();
         inventory.openCart();
 
@@ -37,6 +41,7 @@ public void RemoveFromCart() {
     CheckoutPage checkout = new CheckoutPage(DriverFactory.getDriver());
 
     login.login("standard_user", "secret_sauce");
+    
 
     inventory.addItem();
     inventory.openCart();
