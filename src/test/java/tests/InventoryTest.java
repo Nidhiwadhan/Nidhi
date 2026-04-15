@@ -13,7 +13,7 @@ import java.util.List;
 
 public class InventoryTest extends BaseTest {
 
-    @Test
+    @Test 
     public void sortPriceLowToHighTest() {
 
         LoginPage login = new LoginPage(DriverFactory.getDriver());
